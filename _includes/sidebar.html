@@ -1,0 +1,25 @@
+<div class="search-wrapper">
+    <form method="GET" action="/search" role="search">
+        <input autocomplete="off" type="text" name="q" id="sidebar-q" class="search">
+    </form>
+</div>
+<div class="menu-items">
+    {% for item in site.data.menu.menu_left %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>{% endfor %}
+    {% for item in site.data.menu.menu_right %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>{% endfor %}
+</div>
+<div class="social-media">
+    {% include social.html %}
+</div>
+<div class="other-links">
+    {% for item in site.data.links %}
+    <div>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>{% endfor %}
+</div>
+

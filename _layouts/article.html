@@ -1,0 +1,57 @@
+---
+layout: page
+---
+<div class="col-xs-12 col-sm-6">
+    <div style="padding-bottom: 80px"></div>
+    <div class="overflow-hidden">
+        <img class="responsive zoom-effect" src="{{ page.image }}" alt="{{ page.description }}">
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6">
+    <div style="padding-bottom: 80px"></div>
+    <p><b>{{ page.title }}</b></p>
+    <p><b>{{ site.currency }} {{ page.price }}</b></p>
+    <div class="size-and-amount">
+        <div class="size-wrapper" id="article-size">
+            {% for size in page.sizes %}
+            <span class="article-size {% if forloop.index == 2 %}active{% endif %}">{{ size }}</span>
+            {% endfor %}
+        </div>
+        <div class="amount-wrapper">
+            <div id="article-amount-minus">-</div>
+            <input type="number" name="amount" id="article-amount" value="1" min="1" max="99">
+            <div id="article-amount-plus">+</div>
+        </div>
+    </div>
+    <div class="text-middle">
+        <button class="btn-classic not-allowed">Add to bag</button>
+    </div>
+    {{ content }}
+</div>
+<div class="col-xs-12 text-middle">
+    <h6>YOU MAY ALSO LIKE…</h6>
+</div>
+<div class="col-xs-12">
+    {% assign articles = site.articles | where: "collectionname", page.collectionname %}
+    {% for article in articles %}
+    {% if article == page.previous.previous %}
+    {% elsif article == page.previous %}
+    {% elsif article == page.next %}
+    {% elsif article == page.next.next %}
+    {% else %}{% continue %}{% endif %}
+    <div class="col-xs-6 col-sm-4">
+        <article class="collection-article text-middle">
+            <a href="{{ article.url }}" title="{{ article.title }}">
+                <div class="overflow-hidden">
+                    <img class="responsive zoom-effect" src="{{ article.image }}" alt="{{ article.description }}">
+                </div>
+            </a>
+            <a href="{{ article.url }}">
+                <p><b>{{ article.title }}</b></p>
+                <p><b>{{ site.currency }} {{ article.price }}</b></p>
+            </a>
+        </article>
+    </div>
+    {% endfor %}
+</div>
+

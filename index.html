@@ -1,0 +1,64 @@
+---
+title: Home
+layout: default
+permalink: /
+image: https://cdn.stemcell.com/media/catalog/product/cache/2/small_image/040ec09b1e35df139433887a97daa66f/S/W/SW1028Mfront-product-5.jpg
+---
+
+<div class="banner">
+    <div class="banner-img" style="background-image: url('{{page.image}}')"></div>
+</div>
+<main style="margin-top: 50px;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 nopadding">
+                <div class="container-fluid nopadding">
+                    <div class="row nopadding">
+                        <div class="col-xs-4 text-middle">
+                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <p>Respected humans<br> make our clothes.</p>
+                        </div>
+                        <div class="col-xs-4 text-middle">
+                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <p>Respected humans<br> make our clothes.</p>
+                        </div>
+                        <div class="col-xs-4 text-middle">
+                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <p>Respected humans<br> make our clothes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row homepage-items">
+            {% for item in site.data.homepage_items %}
+            <div class="article-wrapper col">
+                <article>
+                    <figure style="background-image: url('{{ item.image }}')"></figure>
+                    <div class="caption">
+                        <h2 style="color: {{ item.title_color }}" class="title">{{ item.title }}</h2>
+                        <p style="color: {{ item.description_color }}" class="description">{{ item.description }}</p>
+                        {% for button in item.buttons %}
+                        <a href="{{ button.url }}" class="btn-default">{{ button.title }}</a>
+                        {% endfor %}
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 effy-gang-title">
+                <h3>Making a change is never a one person job.
+                    You need a gang for that. <a href="/effy-gang">#effygang</a></h3>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="instagram-followers col-xs-12" id="instagram-followers"></div>
+        </div>
+    </div>
+    <div class="newsletter-banner">
+        <h6>greatest <a href="/newsletter">newsletter</a> of all time</h6>
+    </div>
+</main>

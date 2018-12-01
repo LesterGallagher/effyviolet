@@ -1,0 +1,133 @@
+---
+title: Effy Violet
+timezone: Europe/Amsterdam
+collections:
+  posts:
+    title: Posts
+    permalink: /:year/:month/:day/:title/
+    output: false
+  shopcollections:
+    title: Collections
+    permalink: /store/collections/:title/
+    output: true
+  categories:
+    title: Categories
+    permalink: /store/:categories/
+    output: true
+  articles:
+    title: Articles
+    permalink: /store/:categories/:title/
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    has_comments: true
+    image: ''
+    description: ''
+- scope:
+    path: ''
+    type: shopcollections
+  values:
+    layout: collection
+    image: 
+    hide: false
+- scope:
+    path: ''
+    type: categories
+  values:
+    layout: categoriy
+- scope:
+    path: ''
+    type: articles
+  values:
+    layout: article
+    sizes: [S, M, L]
+currency: €
+has_comments: true
+disqus: https-esstudio-site
+feedburner: https://feeds.feedburner.com/echosierrastudio
+share:
+- facebook
+- twitter
+- tumblr
+- pinterest
+- reddit
+- google
+- tumblr
+- email
+- pinterest
+- linkedin
+- xing
+- whatsapp
+- hackernews
+- vk
+- telegram
+volledige-titel: Echo Sierra Studio
+image_src: "/assets/img/image_src.png"
+logo: "/assets/img/image_src.png"
+keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming
+  Hub
+exclude:
+- vendor
+description: Web, app and tooling development and graphic design studio. View all
+  websites made by Echo Sierra Studio and contact us if your interested.
+theme_color: "#fb5353"
+disqus: https-esstudio-site
+baseurl: 
+abbrv: ESS
+dribbble_username: es_studio
+facebook_username: ES-Studio-2052606714783317
+flickr_username: es_studio
+github_username: LesterGallagher
+instagram_username: 
+linkedin_username: 
+pinterest_username: eestudio0040
+twitter_username: esstudio_site
+youtube_username: 9Wereld
+disqus_username: https://disqus.com/by/echosierrastudio/
+googleplus_username: 
+rss: true
+facebook:
+  app_id: 1015809515263840
+  publisher: 2052606714783317
+  admins: 100028399686104
+webmaster_verifications:
+  google: 
+  bing: 
+  alexa: 
+  yandex: 
+  baidu: 
+twitter:
+  username: esstudio_site
+sass:
+  style: compressed
+  sass_dir: _sass
+url: https://esstudio.site
+enforce_ssl: esstudio.site
+plugins:
+- jekyll-feed
+- jekyll-gist
+- jekyll-sitemap
+- jekyll-paginate
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+theme: minima
+author: Sem Postma
+designer: Sem Postma
+lang: en
+humanstxt_author:
+  name: Sem Postma
+  from: Oosterhout, Noord Brabant, The Netherlands
+  role: Developer
+  email: sem.postma@gmail.com
+humanstxt_designer:
+  name: Sem Postma
+  from: Oosterhout, Noord Brabant, The Netherlands
+  role: Developer
+  email: sem.postma@gmail.com
+google_analytics: UA-90014538-4

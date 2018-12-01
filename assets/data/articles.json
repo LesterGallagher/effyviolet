@@ -1,0 +1,25 @@
+---
+---
+{
+    "currency" {{ site.currency }},
+    "articles": [
+        {% for article in site.articles %}{% if article.hide %}{% continue %}{% endif %}{
+            "title": "{{ article.title }}",
+            "category": {{ article.categories | jsonify }},
+            "tags": {{ article.tags | jsonify }},
+            "collectionname": "{{ article.collectionname }}",
+            "content": {{ article.content | jsonify }},
+            "url": "{{ article.url }}",
+            "description": {{ article.description | jsonify }},
+            "image": "{{ article.image }}",
+            "excerpt": {{ article.excerpt | jsonify }},
+            "draft": "{{ article.draft }}",
+            "sizes": "{{ article.sizes }}",
+            "price": "{{ article.price }}",
+            "id": "{{ article.id }}",
+            "next": "{{ article.next.id }}",
+            "previous": "{{ article.previous.id }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}

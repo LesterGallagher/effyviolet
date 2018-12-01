@@ -1,0 +1,44 @@
+---
+title: Blog
+permalink: "/blog/"
+layout: default
+description: Echo Sierra Studio"s blog page.
+---
+
+<main class="main-inner-wrapper container">
+    {%- if site.posts.size > 0 -%}
+    <div class="grid-lod effect-2" id="grid">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <article class="blog-header">
+                <header>
+                    <h2>
+                        <span>News</span> Updates from studio</h2>
+                </header>
+                <p>Get all information about our studio from latest news posts & updates page.</p>
+                <p>&nbsp;</p>
+                <a href="/feed" title="rss feed link" target="_blank"><img class="inline-block" height="56" src="/assets/img/rss.png" alt="rss icon"></a>
+                <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed"  target="_blank"><img class="inline-block" id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png" alt="follow us in feedly" width="131" height="56"></a>
+                {% include push-notifications.html %}
+                <p>&nbsp;</p>
+            </article>
+        </div>
+        {%- for post in site.posts -%}
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+            <section class="blog-content">
+                <a href="{{ post.url | absolute_url }}">
+                    <figure>
+                        <div class="post-date">
+                            <span>{{ post.date | date: "%d" }}</span> {{ post.date | date: "%B %Y" }} </div>
+                        <img src="{{ post.image | absolute_url }}" alt="{{ post.title }} image" class="img-responsive" /> </figure>
+                </a>
+                <article>{{ post.title | escape }}</article>
+            </section>
+        </div>
+        {%- endfor -%}
+    </div>
+    <p class="rss-subscribe">subscribe
+        <a target="_blank" href="{{ "/feed.xml" | absolute_url }}">via RSS</a>
+    </p>
+    {%- endif -%}
+    </div>
+</main>

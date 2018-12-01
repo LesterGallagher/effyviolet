@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include head.html %}
+
+<body>
+  <div class="sidebar-wrapper closed" id="sidebar-wrapper">{% include sidebar.html %}</div>
+  <div class="navbar-wrapper" id="navbar-wrapper">{% include navbar.html %}</div>
+  <div class="inner-wrapper" id="inner-wrapper">
+    {{ content }}
+    {% include footer.html %}
+  </div>
+  <div id="search-overlap" class="search-overlap">
+    <a href="#search-overlap-close" id="search-overlap-close" class="top-right-abs">&times;</a>
+    <h6 class="type-to-search">Type to Search</h6>
+    <form method="GET" action="/search" role="search">
+      <input role="searchbox" autocomplete="off" type="text" name="q" id="search-overlap-search" placeholder="Search">
+      <p id="search-hit-enter">Hit enter</p>
+    </form>
+  </div>
+
+  <noscript>
+    <div id="noscript-modal" class="modal" role="dialog" aria-expanded="true">
+      <div class="modal-content">
+        <h2>Important!</h2>
+        <p class="noscript-msg">
+          This website requires javascript.
+          <br>
+          <a href="https://www.enable-javascript.com/" target="_blank">
+            You can find instructions on how to enable javascript here.</a>
+        </p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="/assets/js/bundle.js"></script>
+</body>
+
+</html>

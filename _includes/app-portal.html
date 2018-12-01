@@ -1,0 +1,24 @@
+{% assign title=include.title %}
+{% if title %}{% else %}{% assign title=page.portal_title %}{% endif %}
+{% assign description=include.description %}
+{% if description %}{% else %}{% assign description=page.portal_description %}{% endif %}
+{% assign image=include.image %}
+{% if image %}{% else %}{% assign image=page.portal_image %}{% endif %}
+{% assign link=include.link %}
+{% if link %}{% else %}{% assign link=page.portal_link %}{% endif %}
+
+<div class="app-portal" style="width: 400px; max-width: 100%; padding: 10px">
+    <img src="{{ image | absolute_url }}" alt="{{ app.title }}"
+        style="max-width: 50%; margin: 20px auto">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <a class="btn" href="{{ link | absolute_url }}">
+        <span>Launch</span>
+        <svg viewBox="0 0 10 18" style="height: 1.2em"><path d="m0.8,1l8,8l-8,8" fill="none" stroke-width="2"
+            style="stroke: currentColor;" /></svg>
+    </a>
+</div>
+
+
+
+

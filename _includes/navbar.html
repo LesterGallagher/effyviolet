@@ -1,0 +1,46 @@
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="col-xs-3 nopadding visible-xs">
+            <a id="nav-bars-btn" class="bars nav-btn" href="#nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+        <div class="menu-left hidden-xs col-sm-4 nopadding">
+            <div class="pull-right">
+                <ul class="nav-items">
+                    {% for item in site.data.menu.menu_left %}
+                    <li class="link-item"><a href="{{ item.url }}">{{ item.title }}</a>
+                        {% if item.subitems %}<ul class="nav-items">{% for subitem in item.subitems %}
+                        <li class="link-item"><a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                            {% if subitem.subitems %}<ul class="nav-items">{% for subsubitem in subitem.subitems %}
+                            <li class="link-item"><a href="{{ subsubitem.url }}">{{ subsubitem.title }}</a>
+                            </li>{% endfor %}</ul>{% endif %}
+                        </li>{% endfor %}</ul>{% endif %}
+                    </li>{% endfor %}
+                </ul>
+            </div>
+        </div>
+        <h3 class="logo col-xs-6 col-sm-4 text-middle nopadding"><a href="/">{{ site.title | downcase }}</a></h3>
+        <div class="menu-right hidden-xs col-sm-4 nopadding">
+            <div class="pull-left">
+                <ul class="nav-items">
+                    {% for item in site.data.menu.menu_right %}
+                    <li class="link-item"><a href="{{ item.url }}">{{ item.title }}</a>
+                        {% if item.subitems %}<ul class="nav-items">{% for subitem in item.subitems %}
+                        <li class="link-item"><a href="{{ subitem.url }}">{{ subitem.title }}</a>
+                            {% if subitem.subitems %}<ul class="nav-items">{% for subsubitem in subitem.subitems %}
+                            <li class="link-item"><a href="{{ subsubitem.url }}">{{ subsubitem.title }}</a>
+                            </li>{% endfor %}</ul>{% endif %}
+                        </li>{% endfor %}</ul>{% endif %}
+                    </li>{% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-search-wrapper pull-right top-right-abs">
+            <div class="shopping-bag pull-left">shopping bag</div>
+            <a id="navbar-search" class="hidden-xs pull-right" href="#search-overlap-search">{% include svg/search.svg %}</a>
+        </div>
+    </div>
+</nav>

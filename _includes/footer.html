@@ -1,0 +1,20 @@
+<footer>
+    <div class="container text-middle">
+        <div class="row social-media social-footer">
+            <div class="col-xs-12">
+                {% include social.html %}
+            </div>
+        </div>
+        <div class="row links-footer">
+            <div class="col-xs-12">
+                <ul>
+                    {% for item in site.data.links %}
+                    <li><b><a href="{{ item.url }}">{{ item.title }}</a></b></li>{% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="row copyright-footer">
+            &copy; effy violet organic apparel 2018
+        </div>
+    </div>
+</footer>

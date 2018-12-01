@@ -1,0 +1,27 @@
+---
+layout: page
+---
+<div class="col-xs-12 col-sm-6">
+    <img class="responsive" src="{{ page.image }}" alt="{{ page.description }}">
+</div>
+<div class="col-xs-12 col-sm-6">
+    {{ content }}
+</div>
+<div class="col-xs-12 collection-articles" style="margin-top: 50px">
+    {% assign articles = site.articles | where: "collectionname", page.collectionname %}
+    {% for article in articles %}
+    <div class="col-xs-6 col-sm-4">
+        <article class="collection-article text-middle">
+            <a href="{{ article.url }}" title="{{ article.title }}">
+                <div class="overflow-hidden">
+                    <img class="responsive zoom-effect" src="{{ article.image }}" alt="{{ article.description }}">
+                </div>
+            </a>
+            <a href="{{ article.url }}">
+                <p><b>{{ article.title }}</b></p>
+                <p><b>{{ site.currency }} {{ article.price }}</b></p>
+            </a>
+        </article>
+    </div>
+    {% endfor %}
+</div>

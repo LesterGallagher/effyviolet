@@ -1,0 +1,26 @@
+menu_left:
+  - title: women
+    url: /store/women
+  - title: men
+    url: /store/men
+  - title: collections
+    url: /store/collections
+    subitems: 
+    - title: recycle collection
+      url: /store/collections/recycle-collection
+    - title: collections1
+      url: /store/collections
+      subitems: 
+      - title: women2
+        url: /women
+      - title: men2
+        url: /men
+      - title: collections2
+        url: /collections
+menu_right:
+  - title: effy gang
+    url: /effy-gang
+  - title: who we are
+    url: /who-we-are
+  - title: service
+    url: /service

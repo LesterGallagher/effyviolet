@@ -1,0 +1,31 @@
+---
+title: Collections
+layout: default
+permalink: /store/collections/
+image:
+---
+
+<div class="banner">
+    <div class="banner-img" style="background-image: url('{{page.image}}')">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
+</div>
+<main style="margin-top: 50px;">
+    <div class="container">
+        <div class="row collections-list">
+            {% for collection in site.shopcollections %}
+            {% if collection.hide %}{% continue %}{% endif %}
+            <div class="col-xs-12 col-sm-6">
+                <a href="{{ collection.url }}" title="{{ colletion.description }}">
+                    <img class="responsive" src="{{ collection.image }}" alt="{{ colletion.description }}">
+                </a>
+                <a href="{{ collection.url }}">
+                    <h2>{{ collection.title }}</h2>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
