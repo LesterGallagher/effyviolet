@@ -1,15 +1,12 @@
----
----
-
 /* http://humanstxt.org/ */
 /* TEAM */
-    {{ site.humanstxt_author.role }}: {{ site.humanstxt_author.name }}
-    From: {{ site.humanstxt_author.from }}
-    Contact: {{ site.humanstxt_author.email }}
+    Developer: Sem Postma
+    From: Oosterhout, Noord Brabant, The Netherlands
+    Contact: sem.postma@gmail.com
     
-    {{ site.humanstxt_designer.role }}: {{ site.humanstxt_designer.name }}
-    From: {{ site.humanstxt_designer.from }}
-    Contact: {{ site.humanstxt_designer.email }}
+    Developer: Sem Postma
+    From: Oosterhout, Noord Brabant, The Netherlands
+    Contact: sem.postma@gmail.com
 
 
 /* SITE */

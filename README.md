@@ -10,4 +10,6 @@ cd ./effyviolet
 bundle exec jekyll serve
 ```
 
-[Demo](https://effyviolet.esstudio.site)
+## Demo
+
+[Checkout the demo here](https://effyviolet.esstudio.site)

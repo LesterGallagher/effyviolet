@@ -1,8 +1,8 @@
 ---
 ---
 
-var DYNAMIC_CACHE = 'esstudio-dynamic-cache-{{ site.time | date: "%s" }}';
-var STATIC_CACHE = 'esstudio-static-cache-{{ site.time | date: "%s" }}';
+var DYNAMIC_CACHE = 'effyviolet-dynamic-cache-{{ site.time | date: "%s" }}';
+var STATIC_CACHE = 'effyviolet-static-cache-{{ site.time | date: "%s" }}';
 
 // listen for outgoing network request
 self.addEventListener('fetch', function (event) {
@@ -55,41 +55,12 @@ self.addEventListener('install', function (event) {
         caches.open(STATIC_CACHE).then(function (cache) {
             return cache.addAll(
                 [
-                    "{{ "/" | absolute_url }}",
-                    "{{ "/assets/css/main.css" | absolute_url }}",
-                    "{{ "/assets/css/critical.css" | absolute_url }}",
-                    "{{ "/assets/img/logo.png" | absolute_url }}",
-                    "https://cdn.polyfill.io/v2/polyfill.min.js",
-                    "{{ "/assets/js/main.js" | absolute_url }}",
-                    "{{ "/assets/minima-social-icons.svg" | absolute_url }}",
-                    "{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}",
-                    "{{ "/uploads/my_logo_512.png" | absolute_url }}",
-                    "{{ "/about/" | absolute_url }}",
-                    "{{ "/blog/" | absolute_url }}",
-                    "{{ "/contact/" | absolute_url }}"
+                    {% for page in site.pages %}
+                    "{{ page.url }}",{% endfor %}
+                    "https://cdn.polyfill.io/v2/polyfill.min.js"
                 ]
             );
         })
     );
-});
-
-self.addEventListener('push', ev => {
-    const data = ev.data.json();
-    console.log('Got push', data);
-    data.badge = 'https://esstudio.site/assets/img/meta-icons/mstile-144x144.png';
-    data.icon = 'https://esstudio.site/assets/img/meta-icons/apple-touch-icon-180x180.png';
-    ev.waitUntil(
-        self.registration.showNotification(data.title, data)
-    );
-});
-
-
-self.addEventListener('notificationclick', function (event) {
-    if (event.notification.data && event.notification.data.url) {
-        event.notification.close();
-        event.waitUntil(
-            clients.openWindow(event.notification.data.url)
-        );
-    }
 });
 

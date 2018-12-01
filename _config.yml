@@ -77,23 +77,22 @@ description: Web, app and tooling development and graphic design studio. View al
 theme_color: "#fb5353"
 disqus: https-esstudio-site
 baseurl: 
-abbrv: ESS
-dribbble_username: es_studio
-facebook_username: ES-Studio-2052606714783317
-flickr_username: es_studio
-github_username: LesterGallagher
+dribbble_username: 
+facebook_username: 
+flickr_username: 
+github_username: 
 instagram_username: 
 linkedin_username: 
-pinterest_username: eestudio0040
-twitter_username: esstudio_site
-youtube_username: 9Wereld
-disqus_username: https://disqus.com/by/echosierrastudio/
+pinterest_username:
+twitter_username:
+youtube_username:
+disqus_username:
 googleplus_username: 
 rss: true
 facebook:
-  app_id: 1015809515263840
-  publisher: 2052606714783317
-  admins: 100028399686104
+  app_id:
+  publisher:
+  admins: 
 webmaster_verifications:
   google: 
   bing: 
@@ -105,29 +104,19 @@ twitter:
 sass:
   style: compressed
   sass_dir: _sass
-url: https://esstudio.site
-enforce_ssl: esstudio.site
+url: https://effyviolet.esstudio.site
+enforce_ssl: effyviolet.esstudio.site
 plugins:
 - jekyll-feed
 - jekyll-gist
 - jekyll-sitemap
 - jekyll-paginate
+- jekyll-seo-tag
 markdown: kramdown
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
-theme: minima
 author: Sem Postma
 designer: Sem Postma
 lang: en
-humanstxt_author:
-  name: Sem Postma
-  from: Oosterhout, Noord Brabant, The Netherlands
-  role: Developer
-  email: sem.postma@gmail.com
-humanstxt_designer:
-  name: Sem Postma
-  from: Oosterhout, Noord Brabant, The Netherlands
-  role: Developer
-  email: sem.postma@gmail.com
 google_analytics: UA-90014538-4

@@ -79,6 +79,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
