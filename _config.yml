@@ -75,32 +75,31 @@ keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Program
   Hub
 exclude:
 - vendor
-description: Web, app and tooling development and graphic design studio. View all
-  websites made by Echo Sierra Studio and contact us if your interested.
+description: Sustainable apparel line.
 theme_color: "#fb5353"
 baseurl: 
 dribbble_username: ''
 facebook_username: example
-flickr_username: 
-github_username: 
+flickr_username: ''
+github_username: ''
 instagram_username: example
-linkedin_username: 
+linkedin_username: ''
 pinterest_username: example
 twitter_username: example
-youtube_username: 
-disqus_username: 
-googleplus_username: 
+youtube_username: ''
+disqus_username: ''
+googleplus_username: ''
 rss: true
 facebook:
-  app_id: 
-  publisher: 
-  admins: 
+  app_id: ''
+  publisher: ''
+  admins: ''
 webmaster_verifications:
-  google: 
-  bing: 
-  alexa: 
-  yandex: 
-  baidu: 
+  google: ''
+  bing: ''
+  alexa: ''
+  yandex: ''
+  baidu: ''
 twitter:
   username: esstudio_site
 sass:
@@ -118,7 +117,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
-author: Sem Postma
-designer: Sem Postma
+author: Eva van der Weide
+designer: Eva van der Weide
 lang: en
 google_analytics: 
