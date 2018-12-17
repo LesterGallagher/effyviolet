@@ -305,6 +305,67 @@ fields:
   type: text
   hidden: false
   default: ''
+
+- name: 
+  label: 
+  type: text
+  hidden: false
+  default: ''
+- name: dribbble_username
+  label: dribbble_username
+  type: text
+  hidden: false
+  default: ''
+- name: facebook_username
+  label: facebook_username
+  type: text
+  hidden: false
+  default: ''
+- name: flickr_username
+  label: flickr_username
+  type: text
+  hidden: false
+  default: ''
+- name: github_username
+  label: github_username
+  type: text
+  hidden: false
+  default: ''
+- name: instagram_username
+  label: instagram_username
+  type: text
+  hidden: false
+  default: ''
+- name: linkedin_username
+  label: linkedin_username
+  type: text
+  hidden: false
+  default: ''
+- name: pinterest_username
+  label: pinterest_username
+  type: text
+  hidden: false
+  default: ''
+- name: twitter_username
+  label: twitter_username
+  type: text
+  hidden: false
+  default: ''
+- name: youtube_username
+  label: youtube_username
+  type: text
+  hidden: false
+  default: ''
+- name: disqus_username
+  label: disqus_username
+  type: text
+  hidden: false
+  default: ''
+- name: googleplus_username
+  label: googleplus_username
+  type: text
+  hidden: false
+  default: ''
 - name: plugins
   label: Plugins
   type: list
