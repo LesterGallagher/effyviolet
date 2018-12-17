@@ -1,7 +1,7 @@
 ---
 label: homepage_items.yml
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: Homepage items
   label: Homepage items
@@ -12,21 +12,21 @@ fields:
     type: text
     hidden: false
     default: ''
-  - name: title_color
+  - type: color
+    name: title_color
+    config:
+      color_format: Hex
     label: Title color
-    type: text
-    hidden: false
-    default: ''
   - name: description
     label: Description
     type: text
     hidden: false
     default: ''
-  - name: description_color
-    label: Description color
-    type: text
-    hidden: false
-    default: ''
+  - type: color
+    name: description_color
+    config:
+      color_format: Hex
+    label: Description Color
   - name: buttons
     label: Buttons
     type: field_group_list
@@ -43,10 +43,8 @@ fields:
       default: ''
     hidden: false
     default: ''
-  - name: image
-    label: Image
-    type: text
-    hidden: false
-    default: ''
+  - type: file
+    name: image
+    label: image
   hidden: false
   default: ''
