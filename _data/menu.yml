@@ -20,4 +20,4 @@ menu_left:
       url: "/collections"
 menu_right:
 - title: who we are
-  url: https://effyviolet.esstudio.site/who-we-are/
+  url: "/who-we-are/"
