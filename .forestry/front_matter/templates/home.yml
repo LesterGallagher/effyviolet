@@ -1,7 +1,7 @@
 ---
 label: Home
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -23,3 +23,12 @@ fields:
   type: textarea
   hidden: false
   default: ''
+- type: file
+  name: icon1
+  label: icon1
+- type: file
+  name: icon2
+  label: icon2
+- type: file
+  name: icon3
+  label: icon3
