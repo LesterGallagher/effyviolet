@@ -305,12 +305,6 @@ fields:
   type: text
   hidden: false
   default: ''
-
-- name: 
-  label: 
-  type: text
-  hidden: false
-  default: ''
 - name: dribbble_username
   label: dribbble_username
   type: text
