@@ -1,0 +1,52 @@
+---
+label: homepage_items.yml
+hide_body: 
+is_partial: 
+fields:
+- name: Homepage items
+  label: Homepage items
+  type: field_group_list
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: title_color
+    label: Title color
+    type: text
+    hidden: false
+    default: ''
+  - name: description
+    label: Description
+    type: text
+    hidden: false
+    default: ''
+  - name: description_color
+    label: Description color
+    type: text
+    hidden: false
+    default: ''
+  - name: buttons
+    label: Buttons
+    type: field_group_list
+    fields:
+    - name: title
+      label: Title
+      type: text
+      hidden: false
+      default: ''
+    - name: url
+      label: Url
+      type: text
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: image
+    label: Image
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
