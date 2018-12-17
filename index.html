@@ -1,10 +1,13 @@
 ---
 title: Home
 layout: default
-permalink: /
+permalink: "/"
 image: https://cdn.stemcell.com/media/catalog/product/cache/2/small_image/040ec09b1e35df139433887a97daa66f/S/W/SW1028Mfront-product-5.jpg
----
+icon1: "/uploads/OCS.jpg"
+icon2: "/uploads/GOTS.jpg"
+icon3: "/uploads/BSCI.jpg"
 
+---
 <div class="banner">
     <div class="banner-img" style="background-image: url('{{page.image}}')"></div>
 </div>
@@ -16,15 +19,15 @@ image: https://cdn.stemcell.com/media/catalog/product/cache/2/small_image/040ec0
                 <div class="container-fluid nopadding">
                     <div class="row nopadding">
                         <div class="col-xs-4 text-middle">
-                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <img src="{{ page.icon1 }}" alt="">
                             <p>Respected humans<br> make our clothes.</p>
                         </div>
                         <div class="col-xs-4 text-middle">
-                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <img src="{{ page.icon2 }}" alt="">
                             <p>Respected humans<br> make our clothes.</p>
                         </div>
                         <div class="col-xs-4 text-middle">
-                            <img src="https://d24yp64k8pn77t.cloudfront.net/wp-content/uploads/2018/11/people.jpg" alt="">
+                            <img src="{{ page.icon3 }}" alt="">
                             <p>Respected humans<br> make our clothes.</p>
                         </div>
                     </div>
