@@ -18,4 +18,6 @@ menu_left:
       url: "/men"
     - title: collections2
       url: "/collections"
-menu_right: []
+menu_right:
+- title: who we are
+  url: https://effyviolet.esstudio.site/who-we-are/
