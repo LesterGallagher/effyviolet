@@ -8,8 +8,8 @@
     url: "/shop"
   image: https://i.imgur.com/3fFSRDd.jpg
 - title: Recycled Collection
-  description: Why throw fabrics away when you can reuse them? Shop our recycled denim
-    collection here.
+  description: Why throw fabrics away when you can just reuse them? Shop our recycled
+    denim collection here.
   buttons:
   - title: shop now
     url: "/shop"
