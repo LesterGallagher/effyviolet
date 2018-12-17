@@ -379,6 +379,10 @@ img.zoom-effect {
     background-position: center center;
 }
 
+img.page-icon {
+    width: 50%;
+}
+
 .homepage-items {
     &::after {
         content: "";
