@@ -77,17 +77,17 @@ description: Web, app and tooling development and graphic design studio. View al
 theme_color: "#fb5353"
 disqus: https-esstudio-site
 baseurl: 
-dribbble_username: 
-facebook_username: 
-flickr_username: 
-github_username: 
-instagram_username: 
-linkedin_username: 
-pinterest_username:
-twitter_username:
-youtube_username:
-disqus_username:
-googleplus_username: 
+dribbble_username: false
+facebook_username: false
+flickr_username: false
+github_username: false
+instagram_username: false
+linkedin_username: false
+pinterest_username: false
+twitter_username: false
+youtube_username: false
+disqus_username: false
+googleplus_username: false
 rss: true
 facebook:
   app_id:
@@ -119,4 +119,4 @@ kramdown:
 author: Sem Postma
 designer: Sem Postma
 lang: en
-google_analytics: 
+google_analytics: false
