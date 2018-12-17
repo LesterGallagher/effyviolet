@@ -48,3 +48,5 @@ fields:
     label: image
   hidden: false
   default: ''
+pages:
+- _data/homepage_items.yml
