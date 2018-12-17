@@ -4,19 +4,19 @@ timezone: Europe/Amsterdam
 collections:
   posts:
     title: Posts
-    permalink: /:year/:month/:day/:title/
+    permalink: "/:year/:month/:day/:title/"
     output: false
   shopcollections:
     title: Collections
-    permalink: /store/collections/:title/
+    permalink: "/store/collections/:title/"
     output: true
   categories:
     title: Categories
-    permalink: /store/:categories/
+    permalink: "/store/:categories/"
     output: true
   articles:
     title: Articles
-    permalink: /store/:categories/:title/
+    permalink: "/store/:categories/:title/"
     output: true
 defaults:
 - scope:
@@ -44,8 +44,11 @@ defaults:
     type: articles
   values:
     layout: article
-    sizes: [S, M, L]
-currency: €
+    sizes:
+    - S
+    - M
+    - L
+currency: "€"
 has_comments: true
 disqus: https-esstudio-site
 feedburner: https://feeds.feedburner.com/echosierrastudio
@@ -75,23 +78,22 @@ exclude:
 description: Web, app and tooling development and graphic design studio. View all
   websites made by Echo Sierra Studio and contact us if your interested.
 theme_color: "#fb5353"
-disqus: https-esstudio-site
 baseurl: 
-dribbble_username: 
-facebook_username: 
+dribbble_username: ''
+facebook_username: example
 flickr_username: 
 github_username: 
-instagram_username: 
+instagram_username: example
 linkedin_username: 
-pinterest_username:
-twitter_username:
-youtube_username:
-disqus_username:
+pinterest_username: example
+twitter_username: example
+youtube_username: 
+disqus_username: 
 googleplus_username: 
 rss: true
 facebook:
-  app_id:
-  publisher:
+  app_id: 
+  publisher: 
   admins: 
 webmaster_verifications:
   google: 
