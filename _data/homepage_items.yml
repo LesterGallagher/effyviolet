@@ -1,15 +1,15 @@
 ---
-- title: recycle collection
-  title_color: "#ffffff"
-  description: recycled denim yarn made in Italy
-  description_color: "#ffffff"
+- title: Recycled Collection
+  description: Why throw fabrics away when you can just reuse them? Shop our recycled
+    denim collection here.
   buttons:
   - title: shop now
     url: "/shop"
   image: https://i.imgur.com/3fFSRDd.jpg
-- title: Recycled Collection
-  description: Why throw fabrics away when you can just reuse them? Shop our recycled
-    denim collection here.
+- title: recycle collection
+  title_color: "#ffffff"
+  description: recycled denim yarn made in Italy
+  description_color: "#ffffff"
   buttons:
   - title: shop now
     url: "/shop"
