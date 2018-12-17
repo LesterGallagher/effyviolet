@@ -18,6 +18,4 @@ menu_left:
       url: "/men"
     - title: collections2
       url: "/collections"
-menu_right:
-- title: who we are
-  url: "/who-we-are"
+menu_right: []
